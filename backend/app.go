@@ -37,10 +37,17 @@ func main() {
 		return
 	}
 
-	// Check the response struct
-	//fmt.Printf("%+v", resp)
-
 	// Access the generated text
-	generatedText := resp.Candidates[0].Content
-	fmt.Println(generatedText)
+	printResponse(resp)
+}
+
+func printResponse(resp *genai.GenerateContentResponse) {
+	for _, cand := range resp.Candidates {
+		if cand.Content != nil {
+			for _, part := range cand.Content.Parts {
+				fmt.Println(part)
+			}
+		}
+	}
+	fmt.Println("---")
 }
