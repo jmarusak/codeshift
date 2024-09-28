@@ -21,10 +21,5 @@ go.work.sum
 # env file
 .env
 
-# React build
-build/
-node_modules/
-module-cache/
-
 # IDE files
 *.swp
