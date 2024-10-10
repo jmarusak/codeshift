@@ -1,0 +1,4 @@
+runtime: go122
+service: default
+
+main: .
