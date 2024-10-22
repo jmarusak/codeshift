@@ -1,0 +1,62 @@
+/* Container and General */
+.file-explorer-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.explorer-title {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Folder Item */
+.folder-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px;
+  margin: 5px 0;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.folder-item:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.folder-item.open {
+  background-color: #e3f2fd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.folder-icon {
+  margin-right: 10px;
+}
+
+/* File Item */
+.file-item {
+  margin-left: 30px;
+  padding: 6px;
+  color: #555;
+  background-color: #fff;
+  border-left: 2px solid #ddd;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* Folder Children */
+.folder-children {
+  margin-left: 20px;
+  border-left: 2px dashed #ddd;
+  padding-left: 10px;
+  margin-top: 5px;
+}
