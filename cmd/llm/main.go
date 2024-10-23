@@ -29,8 +29,36 @@ func main() {
 	// Get the "gemini-1.5-flash" model
 	model := client.GenerativeModel("gemini-1.5-flash")
 
+/*
+	// Define the schema
+	schema := `{
+    "content": [
+        {
+            "type": "text",
+            "value": "string"
+        },
+        {
+            "type": "code",
+            "language": "string",
+            "value": "string"
+        }
+    ]
+	}`
+
+*/
+
 	// Generate content with the prompt
-	prompt := "Why meaning of life is 42?"
+	prompt := "generate simple main.go module for golang"
+
+
+	// Ask the model to respond with JSON.
+	model.ResponseMIMEType = "application/json"
+	// Specify the schema.
+	model.ResponseSchema = &genai.Schema{
+        Type:  genai.TypeArray,
+        Items: &genai.Schema{Type: genai.TypeString},
+	}
+
 	resp, err := model.GenerateContent(ctx, genai.Text(prompt))
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error generating content: %v", err)
