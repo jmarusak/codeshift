@@ -1,0 +1,12 @@
+.text-editor {
+  border: 1px solid #ccc;
+  padding: 10px;
+  min-height: 100px;
+  outline: none;
+  font-size: 14px;
+  font-family: monospace;
+  color: #333;
+  white-space: pre;
+  overflow-x: auto;
+  overflow-y: auto;
+}

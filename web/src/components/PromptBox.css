@@ -1,0 +1,26 @@
+.prompt-inputbox-container {
+  margin: 20px;
+}
+
+.prompt-inputbox-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.prompt-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin: 0px 0px 0px 5px;
+  cursor: pointer;
+}
+
+.prompt-button:hover {
+  background-color: #0056b3;
+}
