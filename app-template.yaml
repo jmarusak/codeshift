@@ -1,0 +1,7 @@
+runtime: go122
+service: default
+
+env_variables:
+  GEMINI_API_KEY: ""
+
+main: .
